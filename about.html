@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Cooking Through College</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <div class="logo-area">
+        <h1>Cooking Through College</h1>
+        <p class="tagline">fun, casual recipes for real college life</p>
+      </div>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="dinners.html">Dinners</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section-heading">
+      <p class="eyebrow">ABOUT ME</p>
+      <h2>Why I started this site</h2>
+    </section>
+
+    <section class="featured-recipes">
+      <article class="recipe-card">
+        <div class="recipe-card-content">
+          <p>
+            Before college, I honestly could not make much beyond eggs or a grilled cheese.
+            Once life started getting busier, I realized how helpful it is to know how to
+            cook meals that are simple, affordable, and actually enjoyable. Over time,
+            cooking started to feel like more than just something practical. It became a way
+            to be creative, try new things, and make everyday routines feel a little more fun.
+          </p>
+
+          <p>
+            This website is my way of collecting those ideas in one place. I want this site
+            to be helpful for other college students who are still learning to cook and do
+            not want recipes to feel overwhelming. I also love the lifestyle side of food,
+            like baking on weekends, making drinks with friends, and putting together meals
+            that feel a little special without being too complicated.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <aside class="featured-recipes">
+      <div class="section-heading">
+        <p class="eyebrow">A FEW THINGS I LOVE</p>
+        <h2>What you’ll probably find here</h2>
+      </div>
+
+      <article class="recipe-card">
+        <div class="recipe-card-content">
+          <ul>
+            <li><strong>Easy dinners</strong> that work for weeknights and leftovers</li>
+            <li><strong>Baking recipes</strong> for weekends, birthdays, and fun little projects</li>
+            <li><strong>Cocktails and mocktails</strong> that feel social and easy to make</li>
+            <li><strong>Beginner-friendly ideas</strong> for anyone still building confidence in the kitchen</li>
+          </ul>
+        </div>
+      </article>
+    </aside>
+
+    <section class="about-fun">
+      <h2>Want a random kitchen fact?</h2>
+      <button onclick="showFact()">Click here</button>
+      <p id="fun-fact"></p>
+    </section>
+
+    <section class="contact-preview">
+      <h2>Get in touch</h2>
+      <p>
+        Have a recipe idea or a fun meal recommendation? Email me at
+        <a href="mailto:gardneag@miamioh.edu">gardneag@miamioh.edu</a>.
+      </p>
+    </section>
+  </main>
+
+  <script>
+    function showFact() {
+      document.getElementById("fun-fact").innerHTML =
+        "One of my favorite parts of cooking is finding simple recipes that still feel a little special.";
+    }
+  </script>
+</body>
+</html>
