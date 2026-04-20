@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cooking Through College | Summer Cooking</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      $("#welcomeNote").mouseenter(function() {
+        alert("Welcome to my summer recipe page!");
+      });
+    });
+
+    $(document).ready(function() {
+      $(".disappear").click(function() {
+        $(this).hide();
+      });
+    });
+
+    $(document).ready(function() {
+      $("#toggleBtn").click(function() {
+        $("#recipeTips").toggle();
+      });
+    });
+
+    $(document).ready(function() {
+      $("#highlightBtn").click(function() {
+        $("#featuredRecipe").css("color", "#c8647d").slideUp(1500).slideDown(1500);
+      });
+    });
+  </script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fffaf7;
+      color: #4d3b36;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #f8d9de;
+      text-align: center;
+      padding: 22px 15px;
+      border-bottom: 2px solid #efc1c9;
+    }
+
+    header h1 {
+      font-family: 'Parisienne', cursive;
+      font-size: 3rem;
+      color: #a35c6b;
+      margin-bottom: 8px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #5b4343;
+      margin: 0 12px;
+      font-weight: 500;
+      font-size: 1rem;
+    }
+
+    nav a:hover {
+      color: #c8647d;
+    }
+
+    .hero {
+      max-width: 900px;
+      margin: 40px auto 25px;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: #7a5a52;
+      margin-bottom: 14px;
+    }
+
+    .hero p {
+      margin-bottom: 14px;
+      font-size: 1rem;
+    }
+
+    .featured-image {
+      text-align: center;
+      margin: 20px auto 35px;
+      padding: 0 20px;
+    }
+
+    .featured-image img {
+      width: 100%;
+      max-width: 520px;
+      height: 340px;
+      object-fit: cover;
+      border-radius: 18px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto 50px;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 28px;
+      padding: 24px;
+      border-radius: 18px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+    }
+
+    .section-one {
+      background-color: #fdecef;
+    }
+
+    .section-two {
+      background-color: #fef6df;
+    }
+
+    .section-three {
+      background-color: #e8f7ea;
+    }
+
+    .section-four {
+      background-color: #eef4ff;
+    }
+
+    h3 {
+      font-family: 'Playfair Display', serif;
+      color: #8a5b63;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    ul {
+      margin-top: 10px;
+      padding-left: 22px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    button {
+      background-color: #d9889a;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 0.95rem;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #c96f84;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #f8d9de;
+      padding: 22px 15px;
+      color: #5b4343;
+      margin-top: 30px;
+    }
+
+    footer a {
+      color: #8a5b63;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    @media (max-width: 700px) {
+      header h1 {
+        font-size: 2.4rem;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 6px 8px;
+      }
+
+      .hero h2 {
+        font-size: 1.6rem;
+      }
+
+      .featured-image img {
+        height: 270px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Cooking Through College</h1>
+    <nav>
+  <a href="index.html">Home</a>
+  <a href="dinners.html">Dinners</a>
+  <a href="about.html">About</a>
+  <a href="materialize.html">Sweet Treats</a>
+  <a href="jquery.html">Summer Cooking</a>
+</nav>
+  </header>
+
+  <section class="hero">
+    <h2 id="welcomeNote">Fresh, simple summer meals</h2>
+    <p>
+      It's officialy warm outside & In the summer, I naturally want meals that feel lighter, fresher, and easier. I love recipes with lots of fruits and vegetables because they taste good, feel balanced, and don’t require a ton of effort. This page highlights some of the kinds of meals I actually like making when the weather is warm.
+  </section>
+
+  <div class="featured-image">
+    <img src="images/summerdin.jpg" alt="Fresh summer food">
+  </div>
+
+  <div class="container">
+    <section class="section-two">
+      <h3>Favorite recipe ideas</h3>
+      <button id="toggleBtn">Show / Hide Recipe Ideas</button>
+
+      <div id="recipeTips">
+        <ul>
+          <li><strong>Caprese sandwiches:</strong> fresh mozzarella, tomato, basil, and balsamic on toasted bread</li>
+          <li><strong>Veggie wraps:</strong> packed with crisp vegetables and a light spread or dressing</li>
+          <li><strong>Tomato pasta salad:</strong> easy to prep ahead and great cold</li>
+          <li><strong>Arugula salad:</strong> peppery, fresh, and really good with lemon and parmesan</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section-three">
+      <h3 id="featuredRecipe">Featured summer favorite</h3>
+      <p>
+        One of my favorite warm-weather meals is a caprese sandwich because it feels fresh, filling, and easy at the same time. It is one of those recipes that tastes like summer without requiring a long grocery list or a lot of cooking.
+      </p>
+      <button id="highlightBtn">Highlight Featured Recipe</button>
+    </section>
+
+    <section class="section-four">
+      <h3>Why I like lighter meals in summer</h3>
+      <p>
+        During the summer, I usually want food that feels colorful and refreshing instead of super heavy. Meals with fruits and vegetables are perfect because they are easy to throw together and still feel satisfying. I also like that recipes like wraps, salads, and pasta salads are flexible, so you can use whatever ingredients you already have.
+      </p>
+      <p>
+        Another reason I like these recipes is because they are realistic for college life. They don’t require complicated steps, and many of them can be made ahead of time for busy days. Overall, these are the kinds of meals that make cooking feel easy, healthy, and enjoyable.
+      </p>
+    </section>
+  </div>
+</body>
+</html>
