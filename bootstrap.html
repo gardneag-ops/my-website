@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smoothies | Cooking Through College</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="bootstrap-header">
+  <h1>Cooking Through College</h1>
+  <p>fun, casual recipes for real college life</p>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="dinners.html">Dinners</a>
+    <a href="about.html">About</a>
+    <a href="materialize.html">Sweet Treats</a>
+    <a href="jquery.html">Summer Cooking</a>
+    <a href="bootstrap.html">Smoothies</a>
+  </nav>
+</header>
+  <main class="container my-5">
+
+    <section class="text-center mb-4 smoothie-intro">
+      <h2 class="page-title">Smoothie Bar</h2>
+      <p class="lead">Easy smoothie ideas for busy mornings, post-class snacks, or something light and refreshing.</p>
+    </section>
+
+    <section class="mb-5">
+      <h3 class="page-title mb-3">Smoothie Ideas</h3>
+
+      <div id="smoothieCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active smoothie-slide">
+            <h3>Strawberry Banana</h3>
+            <p>Frozen strawberries, banana, vanilla yogurt, and a splash of orange juice.</p>
+          </div>
+
+          <div class="carousel-item smoothie-slide">
+            <h3>Tropical Green</h3>
+            <p>Mango, pineapple, spinach, banana, and coconut water.</p>
+          </div>
+
+          <div class="carousel-item smoothie-slide">
+            <h3>Berry Protein</h3>
+            <p>Frozen berries, vanilla protein yogurt, banana, and almond milk.</p>
+          </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#smoothieCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#smoothieCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <section class="mb-5">
+      <h3 class="page-title mb-3">Favorite Combos</h3>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card smoothie-card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Creamy Berry</h5>
+              <p class="card-text">Strawberries, raspberries, banana, vanilla yogurt, and almond milk.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card smoothie-card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Peachy Glow</h5>
+              <p class="card-text">Peaches, mango, orange juice, Greek yogurt, and honey.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card smoothie-card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Chocolate Banana</h5>
+              <p class="card-text">Banana, cocoa powder, peanut butter, milk, and vanilla yogurt.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-5">
+      <h3 class="page-title mb-3">Build Your Smoothie</h3>
+
+      <form class="card smoothie-card p-4">
+        <div class="mb-3">
+          <label for="name" class="form-label">Your Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your name">
+        </div>
+
+        <div class="mb-3">
+          <label for="base" class="form-label">Choose a Base</label>
+          <select class="form-select" id="base">
+            <option selected>Choose one...</option>
+            <option>Almond milk</option>
+            <option>Orange juice</option>
+            <option>Coconut water</option>
+            <option>Regular milk</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Add-ins</label>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="protein">
+            <label class="form-check-label" for="protein">Protein yogurt</label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="spinach">
+            <label class="form-check-label" for="spinach">Spinach</label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="peanutButter">
+            <label class="form-check-label" for="peanutButter">Peanut butter</label>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-pink">Submit Smoothie</button>
+      </form>
+    </section>
+
+    <section class="mb-5">
+      <h3 class="page-title mb-3">Smoothie Tips</h3>
+
+      <div class="accordion" id="smoothieTips">
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#tipOne">
+              How do I make a smoothie thicker?
+            </button>
+          </h2>
+          <div id="tipOne" class="accordion-collapse collapse show" data-bs-parent="#smoothieTips">
+            <div class="accordion-body">
+              Use frozen fruit, less liquid, Greek yogurt, or banana.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tipTwo">
+              What is the best liquid to use?
+            </button>
+          </h2>
+          <div id="tipTwo" class="accordion-collapse collapse" data-bs-parent="#smoothieTips">
+            <div class="accordion-body">
+              Orange juice makes it sweeter, almond milk makes it creamier, and coconut water makes it lighter.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tipThree">
+              How can I make it more filling?
+            </button>
+          </h2>
+          <div id="tipThree" class="accordion-collapse collapse" data-bs-parent="#smoothieTips">
+            <div class="accordion-body">
+              Add protein yogurt, peanut butter, oats, or chia seeds.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Cooking Through College</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
