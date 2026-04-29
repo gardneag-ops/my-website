@@ -335,3 +335,98 @@ tr:nth-child(even) {
 .contact-preview a:hover {
   text-decoration: underline;
 }
+/* Bootstrap Smoothies Page */
+
+.bootstrap-header {
+  text-align: center;
+  background-color: #f6d6df;
+  padding: 35px 20px 25px;
+  border-bottom: 2px solid #e8c2cb;
+}
+
+.bootstrap-header h1 {
+  font-family: 'Parisienne', cursive;
+  font-size: 3.6rem;
+  color: #9b5c6b;
+  margin: 0;
+}
+
+.bootstrap-header p {
+  margin: 8px 0 22px;
+  color: #5b4542;
+}
+
+.bootstrap-header nav {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  flex-wrap: wrap;
+}
+
+.bootstrap-header nav a {
+  color: #4b3835;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.bootstrap-header nav a:hover {
+  color: #9b5c6b;
+}
+
+main.container {
+  max-width: 1100px;
+}
+
+.smoothie-slide {
+  min-height: 210px;
+  padding: 45px 30px;
+}
+
+.smoothie-card {
+  padding: 10px;
+}
+
+form.smoothie-card {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.btn-pink {
+  width: auto;
+  padding: 10px 30px;
+  display: block;
+  margin-top: 20px;
+}
+#smoothieCarousel {
+  background-color: #f7dce2;
+  border-radius: 24px;
+  min-height: 250px;
+  padding: 40px;
+  margin-top: 25px;
+  box-shadow: 0 10px 25px rgba(75, 56, 53, 0.08);
+}
+
+#smoothieCarousel .carousel-item {
+  text-align: center;
+  padding: 45px 80px;
+}
+
+#smoothieCarousel h3 {
+  font-family: 'Playfair Display', serif;
+  color: #8f4448;
+  font-size: 2rem;
+}
+
+#smoothieCarousel p {
+  color: #4b3835;
+  font-size: 1rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+.smoothie-intro {
+  margin-top: 30px;
+}
