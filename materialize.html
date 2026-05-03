@@ -21,6 +21,11 @@
       background-color: #f8bbd0;
     }
 
+    .brand-logo {
+      font-size: 1.6rem !important;
+      font-weight: 600;
+    }
+
     .page-header {
       padding: 55px 0 25px;
     }
@@ -28,7 +33,13 @@
     .page-header h1 {
       color: #5d4037;
       font-weight: 700;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
+    }
+
+    .tagline {
+      color: #795548;
+      font-size: 1rem;
+      margin-bottom: 15px;
     }
 
     .page-header p {
@@ -84,46 +95,30 @@
       border-radius: 10px;
     }
 
-    .video-note {
-      color: #795548;
-      font-size: 1.1rem;
-      margin-bottom: 20px;
-    }
-
-    .button-wrap {
-      margin-top: 45px;
-      margin-bottom: 20px;
-    }
-
     footer {
       margin-top: 50px;
       padding: 22px 0;
       text-align: center;
       background-color: #f8bbd0;
-      color: white;
-    }
-
-    .brand-logo {
-      font-size: 2rem !important;
-      font-weight: 600;
+      color: #5d4037;
+      font-weight: 500;
     }
   </style>
 </head>
+
 <body>
 
   <!-- Navigation -->
   <nav>
     <div class="nav-wrapper container">
-      <a href="materialize.html" class="brand-logo">Sweet Treats</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-  <li><a href="index.html">Home</a></li>
-  <li><a href="dinners.html">Dinners</a></li>
-  <li><a href="about.html">About</a></li>
-  <li><a href="materialize.html">Sweet Treats</a></li>
-  <li><a href="jquery.html">Summer Cooking</a></li>
-  <li><a href="bootstrap.html">Smoothies</a></li>
-
-</ul>
+      <a href="index.html" class="brand-logo">Cooking Through College</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dinners.html">Dinners</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="materialize.html">Sweet Treats</a></li>
+        <li><a href="jquery.html">Summer Cooking</a></li>
+        <li><a href="bootstrap.html">Smoothies</a></li>
       </ul>
     </div>
   </nav>
@@ -131,10 +126,11 @@
   <!-- Header -->
   <div class="container center-align page-header">
     <h1>Sweet Treats</h1>
+    <p class="tagline">Fun, casual recipes for real college life</p>
     <p>I’m a firm believer that sweets are the best love language.</p>
   </div>
 
-  <!-- Intro Section with Circular Image -->
+  <!-- Intro Section -->
   <div class="container">
     <div class="card-panel pink lighten-5 z-depth-1 intro-box">
       <div class="row valign-wrapper">
@@ -164,10 +160,7 @@
           </div>
           <div class="card-content">
             <span class="card-title">Homemade Baileys</span>
-            <p>
-              I made homemade Baileys as a Christmas gift for loved ones, and it ended up being one of my favorite things I’ve made.
-              It felt thoughtful, festive, and more personal than something store-bought.
-            </p>
+            <p>Thoughtful, festive, and way more fun than store-bought.</p>
           </div>
         </div>
       </div>
@@ -179,10 +172,7 @@
           </div>
           <div class="card-content">
             <span class="card-title">Blueberry Muffins</span>
-            <p>
-              Blueberry muffins are one of my favorite sweet breakfasts. My boyfriend & I made fresh ones for brunch last weekend and I was reminded how much I love them.
-              They are simple & classic.
-            </p>
+            <p>Simple, classic, and one of my favorite sweet breakfasts.</p>
           </div>
         </div>
       </div>
@@ -194,17 +184,15 @@
           </div>
           <div class="card-content">
             <span class="card-title">Cookies</span>
-            <p>
-              Cookies are one of those desserts that always feel comforting and easy to share.
-              I also think that peanut butter cookies are seriously underrated. Gooey, sweet & best warm!
-            </p>
+            <p>Comforting, easy to share, and always best warm.</p>
           </div>
         </div>
       </div>
+
     </div>
   </div>
 
-  <!-- Quote Panel -->
+  <!-- Quote -->
   <div class="container">
     <div class="card-panel brown lighten-1 white-text center-align quote-box z-depth-1">
       Sweet recipes I actually want to make again: simple, shareable, and a little special.
@@ -216,50 +204,47 @@
     <h3 class="center-align">Photo Gallery</h3>
     <div class="row">
       <div class="col s12 m4 gallery-col">
-        <img src="images/cupcakes.jpg" alt="Cupcakes" class="materialboxed z-depth-1 gallery-img">
+        <img src="images/cupcakes.jpg" class="materialboxed gallery-img">
       </div>
-
       <div class="col s12 m4 gallery-col">
-        <img src="images/sorbet.jpg" alt="Sorbet" class="materialboxed z-depth-1 gallery-img">
+        <img src="images/sorbet.jpg" class="materialboxed gallery-img">
       </div>
-
       <div class="col s12 m4 gallery-col">
-        <img src="images/muffin.jpg" alt="Blueberry muffins" class="materialboxed z-depth-1 gallery-img">
+        <img src="images/muffin.jpg" class="materialboxed gallery-img">
       </div>
     </div>
   </div>
+<!-- Video -->
+<div class="container" style="margin-top: 50px;">
+  <h3 class="center-align">Inspiration of the Week</h3>
+  <p class="center-align" style="color:#795548;">
+    This week’s inspiration is churros with hot chocolate. Since I’m planning a trip to Spain, this video made me excited to try more Spanish desserts.
+  </p>
 
-  <!-- Video -->
-  <div class="container" style="margin-top: 50px;">
-    <h3 class="center-align">Inspiration of the Week</h3>
-    <p class="center-align video-note">
-      This week’s inspiration is churros with hot chocolate. Since I’m planning a trip to Spain, this video made me excited to try more Spanish desserts.
-    </p>
-    <div class="video-container">
-      <iframe
-        width="853"
-        height="480"
-        src="https://www.youtube.com/embed/VYqoOiQsV0A?rel=0"
-        title="How to make perfect churros with hot chocolate"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-      </iframe>
-    </div>
+  <div class="video-container">
+    <iframe
+      width="853"
+      height="480"
+      src="https://www.youtube.com/embed/VYqoOiQsV0A?rel=0"
+      title="How to make perfect churros with hot chocolate"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
   </div>
-
+</div>
   <!-- Buttons -->
-  <div class="container center-align button-wrap">
-    <a href="index.html" class="waves-effect waves-light btn brown">Back Home</a>
-    <a href="dinners.html" class="waves-effect waves-light btn pink lighten-1">See Dinners</a>
+  <div class="container center-align" style="margin-top: 40px;">
+    <a href="index.html" class="btn brown">Back Home</a>
+    <a href="dinners.html" class="btn pink lighten-1">See Dinners</a>
   </div>
 
   <!-- Footer -->
   <footer>
-    Cooking Through College | Sweet Treats
+    Cooking Through College
   </footer>
 
-  <!-- Materialize JS -->
+  <!-- JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
